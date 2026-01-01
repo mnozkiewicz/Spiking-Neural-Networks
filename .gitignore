@@ -1,0 +1,12 @@
+# Python venv
+.venv
+venv
+
+# Datasets
+dataset/*
+
+
+# VsCode
+
+.vscode
+.DS_Store

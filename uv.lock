@@ -1204,6 +1204,20 @@ wheels = [
 ]
 
 [[package]]
+name = "nibabel"
+version = "5.3.3"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "numpy" },
+    { name = "packaging" },
+    { name = "typing-extensions", marker = "python_full_version < '3.13'" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/b1/8b/98e35cd0f2a97c8c261cedf8cc155766a3c540cb248d449582bb9e99c719/nibabel-5.3.3.tar.gz", hash = "sha256:8d2006b70d727fd0a798a88ae5fd64339741f436fcfc83d6ea3256cdbc51c5b7", size = 4506925, upload-time = "2025-12-05T19:16:54.416Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/b8/f5/7f6aa3bbff013c0bf993129cbb2b1505790091f812accbe85cf001514737/nibabel-5.3.3-py3-none-any.whl", hash = "sha256:e8b17423ee8464da3b69e6a15799eb19f2350a7d38377026d527b6b84938adac", size = 3293989, upload-time = "2025-12-05T19:16:51.941Z" },
+]
+
+[[package]]
 name = "notebook"
 version = "7.5.0"
 source = { registry = "https://pypi.org/simple" }
@@ -1955,6 +1969,7 @@ source = { virtual = "." }
 dependencies = [
     { name = "jupyter" },
     { name = "matplotlib" },
+    { name = "nibabel" },
     { name = "numpy" },
     { name = "snntorch" },
     { name = "torch" },
@@ -1966,6 +1981,7 @@ dependencies = [
 requires-dist = [
     { name = "jupyter", specifier = ">=1.1.1" },
     { name = "matplotlib", specifier = ">=3.10.7" },
+    { name = "nibabel", specifier = ">=5.3.3" },
     { name = "numpy", specifier = ">=2.3.5" },
     { name = "snntorch", specifier = ">=0.9.4" },
     { name = "torch", specifier = ">=2.9.1" },
